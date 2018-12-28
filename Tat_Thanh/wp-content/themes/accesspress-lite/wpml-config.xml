@@ -1,0 +1,14 @@
+<wpml-config>
+    <admin-texts>
+        <key name="accesspresslite_options">
+            <key name="header_text" />
+            <key name="footer_copyright" />
+            <key name="action_text" />
+            <key name="action_btn_text" />
+            <key name="welcome_post_readmore" />
+            <key name="featured_section_title" />
+            <key name="featured_post_readmore" />
+            <key name="view_all_text" />
+        </key>
+    </admin-texts>       
+</wpml-config>
