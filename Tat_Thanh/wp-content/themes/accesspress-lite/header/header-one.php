@@ -3,19 +3,6 @@ $accesspresslite_options = accesspress_default_setting_value();
 $accesspresslite_settings = get_option( 'accesspresslite_options', $accesspresslite_options );?>
 <div id="top-header">
 		<div class="ak-container">
-			<div class="site-branding">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">				
-				<?php if ( get_header_image() ) { ?>
-					<img src="<?php header_image(); ?>" alt="<?php bloginfo('name') ?>">
-				<?php }else{ ?>
-					<h1 class="site-title"><?php echo bloginfo('title'); ?></h1>
-					<div class="tagline site-description"><?php echo bloginfo('description'); ?></div>
-				<?php } ?>		
-				</a>
-				
-			</div><!-- .site-branding -->
-        
-
 			<div class="right-header clearfix">
 				<?php 
 				do_action( 'accesspresslite_header_text' ); 
@@ -30,11 +17,25 @@ $accesspresslite_settings = get_option( 'accesspresslite_options', $accesspressl
 				}
 
 				if($accesspresslite_settings['show_search'] == 1){ ?>
-				<div class="ak-search">
-					<?php get_search_form(); ?>
-				</div>
+				
 				<?php } ?>
 			</div><!-- .right-header -->
+			<div class="site-branding">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">				
+				<?php if ( get_header_image() ) { ?>
+					<img src="<?php header_image(); ?>" alt="<?php bloginfo('name') ?>">
+				<?php }else{ ?>
+					<h1 class="site-title"><?php echo bloginfo('title'); ?></h1>
+					<div class="tagline site-description"><?php echo bloginfo('description'); ?></div>
+				<?php } ?>		
+				</a>
+				
+			</div><!-- .site-branding -->
+        
+			<div class="ak-search">
+				<?php get_search_form(); ?>
+            </div>
+			
 		</div><!-- .ak-container -->
   </div><!-- #top-header -->
 

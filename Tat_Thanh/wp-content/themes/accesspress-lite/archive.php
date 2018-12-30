@@ -18,7 +18,7 @@ $accesspresslite_settings = get_option( 'accesspresslite_options', $accesspressl
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="">
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :

@@ -102,7 +102,7 @@ button,
 input,
 select,
 textarea {
-	color: #444;
+	color: #000;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	line-height: 1.8;
@@ -114,11 +114,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
 	line-height: 1.3;
 	margin-bottom: 15px;
-    color: #555;
+    color: #D05A00;
     font-weight: 400;
 }
 p {
 	margin-bottom:20px;
+	color: #000!important
 }
 b, strong {
 	font-weight: bold;
@@ -491,11 +492,17 @@ a:active {
 /*--------------------------------------------------------------
 Posts and pages
 --------------------------------------------------------------*/
+.page-title
+{
+	color: #000;
+	font-size: 20px
+}
+
 h1.entry-title{ 
-	color: #666;
+	color: #D05A00;
 }
 h1.entry-title a{
-	color:#666;
+	color:#D05A00;
 }
 
 .sticky {
@@ -559,6 +566,8 @@ article.hentry .edit-link{
 article.hentry h1.entry-title{
 	margin-bottom: 5px;
 	line-height: 1.2;
+	color: #000;
+	font-size: 20px;
 }
 
 article.hentry .entry-footer > span{
@@ -853,7 +862,10 @@ iframe,
 object {
 	max-width: 100%;
 }
-
+iframe
+{
+	height: 315px !important
+}
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
@@ -898,7 +910,7 @@ object {
 Header
 --------------------------------------------------------------*/
 #masthead #top-header{
-	padding: 20px 0;
+	padding: 5px 0;
     background: url(images/bgheader.jpg) repeat-x scroll left bottom #FFF;
 }
 
@@ -926,7 +938,6 @@ body.boxed-layout{
 
 #masthead .site-branding{ 
 	float: left; 
-	padding: 15px 0;
 }
 
 #masthead .site-branding h1{
@@ -942,15 +953,15 @@ body.boxed-layout{
 }
 
 #masthead .site-branding img{
-    height: auto !important;
-    width: auto !important;
-    display: block;
+    width: 70%;
+display: block;
+margin-left: 10%;
 }
 
-#masthead .right-header{
+/*#masthead .right-header{
 	float: right;
 	padding: 10px 0;
-}
+}*/
 
 #masthead .right-header .clear:first-child{
     margin-top: 25px;
@@ -1001,6 +1012,8 @@ search form
 --------------------------------------------------------------*/
 .ak-search{
  float: right;
+ margin-top: 5%;
+margin-right: 8%;
 }
 
 .searchform{
@@ -1075,7 +1088,11 @@ Menus
 }
 
 
-
+.main-navigation
+{
+	background-color: #D05A00 !important;
+	border-color: #D05A00 !important
+}
 .main-navigation a {
 	display: block;
 	text-decoration: none;
@@ -1130,7 +1147,11 @@ Menus
 }
 
 .main-navigation li:hover > a {
-	background: #04A3ED;
+	background: #853900 !important;
+}
+.main-navigation .current-menu-item > a, .main-navigation .current_page_item > a
+{
+	background-color: #853900 !important;
 }
 
 .main-navigation ul ul li:hover > a ,
@@ -1701,17 +1722,17 @@ Footer
 }
 
 .site-footer a{
-	color: #CCC;
+	color: #000;
 }
 
 .site-footer a:hover{
-    color:#F9F9F9;
+    color:#fff;
 }
 
 #top-footer{ 
 	font-size: 14px;
-	background:#353f47; 
-	padding: 40px 0; 
+	background:#D05A00; 
+	padding: 30px 0px 0px 0px; 
 	color: #CCC;
 }
 
@@ -1794,7 +1815,10 @@ Footer
 	color: #CCC;
     font-weight: 300;
 }
-
+#bottom-footer a
+{
+	color: #fff !important
+}
 #bottom-footer .site-info{
 	float: right;
 	font-size: 14px;
@@ -1804,7 +1828,8 @@ Footer
 }
 
 #bottom-footer .copyright{
-	float: left;
+	text-align: center;
+	color: #fff
 }
 
 /*Recent post widget*/
@@ -2474,4 +2499,61 @@ Responsive grid for pages
 .span6{
   width: 100%;
   margin-left: 0;
+}
+
+/*CSS Nhung Tran*/
+
+/* HOME */
+.home h2
+{
+	text-align: center;
+	text-transform: uppercase;
+}
+.home-gioi-thieu , .home-tin-tuc, .home-hoat-dong , .home-can-bo
+{
+	margin-top: 5%
+}
+.home-gioi-thieu
+{
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+}
+.item-tin-tuc
+{
+	width: 25%;
+	float: left;
+	margin-left: 6%;
+	margin-right: 1%;
+}
+.item-tin-tuc img , .item-hoat-dong img
+{
+	height: 200px
+}
+.item-can-bo
+{
+	float: left; 
+	width: 18%;
+	margin-left: 6%;
+}
+.item-can-bo img
+{
+	height: 300px;
+	width: 100%
+}
+.item-can-bo h6
+{
+	text-align: center;
+}
+.item-gallery img
+{
+	width: 14.5%;
+float: left;
+margin-left: 1%;
+margin-right: 1%;
+}
+.ak-search .searchform .searchsubmit
+{
+	background-color: #D05A00!important;
+	color: #fff!important;
 }

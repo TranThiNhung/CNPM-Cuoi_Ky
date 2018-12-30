@@ -83,7 +83,7 @@ function accesspresslite_posted_on() {
 	);
 
 	/* translators: %1$s : posted date, %2$s : author name */
-	printf( wp_kses(__( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'accesspress-lite' ), array( 'a' => array( 'href' => array(), 'rel' => array(), ), 'time' => array( 'class' => array(), 'datetime' => array(), ), 'span' => array('class' => array() ) ) ),
+	printf( wp_kses(__( '<span class="posted-on"> %1$s</span><span class="byline"> by %2$s</span>', 'accesspress-lite' ), array( 'a' => array( 'href' => array(), 'rel' => array(), ), 'time' => array( 'class' => array(), 'datetime' => array(), ), 'span' => array('class' => array() ) ) ),
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 			esc_url( get_permalink() ),
 			wp_kses($time_string, array(

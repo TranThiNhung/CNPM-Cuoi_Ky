@@ -49,11 +49,6 @@
 		
 		<div id="bottom-footer">
 		<div class="ak-container">
-			<div class="site-info">
-				<a href="<?php echo esc_url('http://wordpress.org/'); ?>"><?php esc_html_e( 'Free WordPress Theme', 'accesspress-lite' ); ?></a>
-				<span class="sep"> | </span>
-				<a href="<?php echo esc_url('https://accesspressthemes.com/');?>" title="AccessPress Themes" target="_blank">AccessPress Lite</a>
-			</div><!-- .site-info -->
 
 			<div class="copyright">
 				<?php esc_html_e('Copyright','accesspress-lite') ?> &copy; <?php echo esc_html(date('Y')); ?> 

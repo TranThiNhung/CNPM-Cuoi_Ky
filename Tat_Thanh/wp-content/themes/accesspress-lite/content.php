@@ -128,9 +128,9 @@ $full_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '
 				$categories_list = get_the_category_list( __( ', ', 'accesspress-lite' ) );
 				if ( $categories_list && accesspresslite_categorized_blog() ) :
 			?>
-			<span class="cat-links">
-				<?php /* translators: %1$s : category list */ printf( wp_kses(__( 'Posted in %1$s', 'accesspress-lite' ), array( 'a' => array( 'href' => array(), 'rel' => array() ) ) ), wp_kses( $categories_list, array( 'a' => array( 'href' => array(), 'rel' => array() ) ) ) ); ?>
-			</span>
+			<!--<span class="cat-links">
+				<?php /* translators: %1$s : category list */// printf( wp_kses(__( 'Posted in %1$s', 'accesspress-lite' ), array( 'a' => array( 'href' => array(), 'rel' => array() ) ) ), wp_kses( $categories_list, array( 'a' => array( 'href' => array(), 'rel' => array() ) ) ) ); ?>
+			</span>-->
 			<?php endif; // End if categories ?>
 
 			<?php

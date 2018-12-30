@@ -28,7 +28,5 @@ $cat_event = $accesspresslite_settings['event_cat'];
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php edit_post_link( __( 'Edit', 'accesspress-lite' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	
 </article><!-- #post-## -->
